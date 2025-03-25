@@ -1,0 +1,19 @@
+package com.example.chess2;
+
+        import javafx.scene.image.Image;
+        import javafx.scene.image.ImageView;
+
+        public class Piece {
+        private ImageView imageView;
+
+        public Piece(String imagePath) {
+        Image image = new Image(imagePath);
+        this.imageView = new ImageView(image);
+        this.imageView.setFitWidth(50);
+        this.imageView.setFitHeight(50);
+        }
+
+        public ImageView getImageView() {
+        return imageView;
+        }
+        }
