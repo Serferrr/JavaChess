@@ -1,12 +1,13 @@
-import Backend.*;
+package Backend;
 
-import org.testng.annotations.Test;
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
-class BishopTest {
+public class BishopTest {
 
     @Test
-    void canMoveDiagonallyToEmptySquare() {
+   public void canMoveDiagonallyToEmptySquare() {
         ChessBoard board = new ChessBoard();
         Bishop bishop = new Bishop(new Position(2, 0), Color.WHITE);
         board.placePiece(bishop);
